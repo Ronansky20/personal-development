@@ -1,0 +1,14 @@
+/Volumes/Development/ronan-personal-development/console-calculator/bin/Debug/net9.0/console-calculator
+/Volumes/Development/ronan-personal-development/console-calculator/bin/Debug/net9.0/console-calculator.deps.json
+/Volumes/Development/ronan-personal-development/console-calculator/bin/Debug/net9.0/console-calculator.runtimeconfig.json
+/Volumes/Development/ronan-personal-development/console-calculator/bin/Debug/net9.0/console-calculator.dll
+/Volumes/Development/ronan-personal-development/console-calculator/bin/Debug/net9.0/console-calculator.pdb
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/console-calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/console-calculator.AssemblyInfoInputs.cache
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/console-calculator.AssemblyInfo.cs
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/console-calculator.csproj.CoreCompileInputs.cache
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/console-calculator.dll
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/refint/console-calculator.dll
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/console-calculator.pdb
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/console-calculator.genruntimeconfig.cache
+/Volumes/Development/ronan-personal-development/console-calculator/obj/Debug/net9.0/ref/console-calculator.dll

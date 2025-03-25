@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "CalculatorLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CalculatorLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculatorLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalculatorLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CalculatorLibrary/CalculatorLibrary.csproj",
+      "msbuildProject": "../CalculatorLibrary/CalculatorLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "CalculatorLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/rdrost/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Volumes/Development/ronan-personal-development/console-calculator/console-calculator.csproj",
+      "projectName": "console-calculator",
+      "projectPath": "/Volumes/Development/ronan-personal-development/console-calculator/console-calculator.csproj",
+      "packagesPath": "/Users/rdrost/.nuget/packages/",
+      "outputPath": "/Volumes/Development/ronan-personal-development/console-calculator/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/rdrost/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Volumes/Development/ronan-personal-development/CalculatorLibrary/CalculatorLibrary.csproj": {
+              "projectPath": "/Volumes/Development/ronan-personal-development/CalculatorLibrary/CalculatorLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

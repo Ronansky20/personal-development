@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v9.0": {
       "console-calculator/1.0.0": {
+        "dependencies": {
+          "CalculatorLibrary": "1.0.0"
+        },
         "runtime": {
           "console-calculator.dll": {}
+        }
+      },
+      "CalculatorLibrary/1.0.0": {
+        "runtime": {
+          "CalculatorLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "console-calculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CalculatorLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

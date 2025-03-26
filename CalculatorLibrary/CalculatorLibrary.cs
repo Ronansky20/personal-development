@@ -20,17 +20,21 @@ public class Calculator
         {
             case "a":
                 result = firstValue + secondValue;
+                Trace.WriteLine(String.Format("{0} + {1} = {2}"));
                 break;
             case "s":
                 result = firstValue - secondValue;
+                Trace.WriteLine(String.Format("{0} - {1} = {2}"));
                 break;
             case "m":
                 result = firstValue * secondValue;
+                Trace.WriteLine(String.Format("{0} * {1} = {2}"));
                 break;
             case "d":
                 if (secondValue != 0)
                 {
                     result = firstValue / secondValue;
+                    Trace.WriteLine(String.Format("{0} / {1} = {2}"));
                 }
                 break;
             default:

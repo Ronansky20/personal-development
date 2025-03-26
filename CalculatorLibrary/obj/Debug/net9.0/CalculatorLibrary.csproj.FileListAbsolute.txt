@@ -1,0 +1,12 @@
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/bin/Debug/net9.0/CalculatorLibrary.deps.json
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/bin/Debug/net9.0/CalculatorLibrary.dll
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/bin/Debug/net9.0/CalculatorLibrary.pdb
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/CalculatorLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/CalculatorLibrary.AssemblyInfoInputs.cache
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/CalculatorLibrary.AssemblyInfo.cs
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/CalculatorLibrary.csproj.CoreCompileInputs.cache
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/CalculatorLibrary.sourcelink.json
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/CalculatorLibrary.dll
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/refint/CalculatorLibrary.dll
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/CalculatorLibrary.pdb
+/Volumes/Development/ronan-personal-development/CalculatorLibrary/obj/Debug/net9.0/ref/CalculatorLibrary.dll

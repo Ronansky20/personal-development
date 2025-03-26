@@ -1,21 +1,31 @@
 ﻿namespace CalculatorLibrary;
-
 using System.Diagnostics;
+using Newtonsoft.Json;
 
 public class Calculator
 {
+    JsonWriter writer;
+
     public Calculator()
     {
-        StreamWriter logFile = File.CreateText("calculator.log");
-        Trace.Listeners.Add(new TextWriterTraceListener(logFile));
-        Trace.AutoFlush = true;
-        Trace.WriteLine("Starting Calc log");
-        Trace.WriteLine(String.Format("Started {0}", System.DateTime.Now.ToString()));
+        StreamWriter logFile = File.CreateText("calculatorlog.json");
+        logFile.AutoFlush = true;
+        writer = new JsonTextWriter(logFile);
+        writer.Formatting = Formatting.Indented;
+        writer.WriteStartObject();
+        writer.WritePropertyName("Operations");
+        writer.WriteStartArray();
     }
 
-    public static double DoOperation(double firstValue, double secondValue, string op)
+    public double DoOperation(double firstValue, double secondValue, string op)
     {
         double result = double.NaN;
+        writer.WriteStartObject();
+        writer.WritePropertyName("Operand1");
+        writer.WriteValue(firstValue);
+        writer.WritePropertyName("Operand2");
+        writer.WriteValue(secondValue);
+        writer.WritePropertyName("Operation");
         switch (op)
         {
             case "a":

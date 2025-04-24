@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cU6AMd6PtjE=",
+  "dgSpecHash": "cVGvZmWwmVI=",
   "success": true,
-  "projectFilePath": "/Volumes/Development/ronan-personal-development/CalculatorLibrary/CalculatorLibrary.csproj",
+  "projectFilePath": "F:\\source\\Ronansky20\\personal-development\\CalculatorLibrary\\CalculatorLibrary.csproj",
   "expectedPackageFiles": [
-    "/Users/rdrost/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\ronan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

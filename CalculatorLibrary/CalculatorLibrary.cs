@@ -1,5 +1,5 @@
 ﻿namespace CalculatorLibrary;
-using System.Diagnostics;
+
 using Newtonsoft.Json;
 
 public class Calculator
@@ -8,13 +8,21 @@ public class Calculator
 
     public Calculator()
     {
-        StreamWriter logFile = File.CreateText("calculatorlog.json");
+        StreamWriter logFile = new StreamWriter("CalculatorLog.json");
         logFile.AutoFlush = true;
         writer = new JsonTextWriter(logFile);
         writer.Formatting = Formatting.Indented;
         writer.WriteStartObject();
         writer.WritePropertyName("Operations");
         writer.WriteStartArray();
+
+    }
+
+    public void Finish()
+    {
+        writer.WriteEndArray();
+        writer.WriteEndObject();
+        writer.Close();
     }
 
     public double DoOperation(double firstValue, double secondValue, string op)
@@ -30,26 +38,30 @@ public class Calculator
         {
             case "a":
                 result = firstValue + secondValue;
-                Trace.WriteLine(String.Format("{0} + {1} = {2}"));
+                writer.WriteValue("Add");
                 break;
             case "s":
                 result = firstValue - secondValue;
-                Trace.WriteLine(String.Format("{0} - {1} = {2}"));
+                writer.WriteValue("Subtract");
                 break;
             case "m":
                 result = firstValue * secondValue;
-                Trace.WriteLine(String.Format("{0} * {1} = {2}"));
+                writer.WriteValue("Multiply");
                 break;
             case "d":
                 if (secondValue != 0)
                 {
                     result = firstValue / secondValue;
-                    Trace.WriteLine(String.Format("{0} / {1} = {2}"));
+                    writer.WriteValue("Divide");
                 }
                 break;
             default:
                 break;
         }
+        writer.WritePropertyName("Result");
+        writer.WriteValue(result);
+        writer.WriteEndObject();
+
         return result;
     }
 }

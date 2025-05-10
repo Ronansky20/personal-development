@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sTjtKTDXIeU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ronan\\source\\repos\\Ronansky20\\personal-development\\rss-feed\\rss-feed.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ronan\\.nuget\\packages\\system.servicemodel.syndication\\9.0.4\\system.servicemodel.syndication.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

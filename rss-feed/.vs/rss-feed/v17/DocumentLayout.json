@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{259F1174-687A-4BAE-A0F7-BB82846CB850}|rss-feed.csproj|c:\\users\\ronan\\documents\\development\\personal-development\\rss-feed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{259F1174-687A-4BAE-A0F7-BB82846CB850}|rss-feed.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B1E40F-7660-43FE-B25D-6FBAC17CA6CC}|RssLibrary\\RssLibrary.csproj|c:\\users\\ronan\\documents\\development\\personal-development\\rss-feed\\rsslibrary\\rsslibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2B1E40F-7660-43FE-B25D-6FBAC17CA6CC}|RssLibrary\\RssLibrary.csproj|solutionrelative:rsslibrary\\rsslibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RssLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\ronan\\Documents\\development\\personal-development\\rss-feed\\RssLibrary\\RssLibrary.cs",
+              "RelativeDocumentMoniker": "RssLibrary\\RssLibrary.cs",
+              "ToolTip": "C:\\Users\\ronan\\Documents\\development\\personal-development\\rss-feed\\RssLibrary\\RssLibrary.cs",
+              "RelativeToolTip": "RssLibrary\\RssLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T01:46:10.042Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

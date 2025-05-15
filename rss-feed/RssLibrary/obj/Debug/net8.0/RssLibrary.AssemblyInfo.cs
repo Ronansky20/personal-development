@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RssLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71a831a927b76dbc535a23963c45ccc64a86429a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14419a606829e8be5d4a6b2e40306b51583c6bba")]
 [assembly: System.Reflection.AssemblyProductAttribute("RssLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RssLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

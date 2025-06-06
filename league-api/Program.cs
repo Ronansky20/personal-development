@@ -1,54 +1,41 @@
 ﻿using League_API_Console_App;
-using System.Text.Json;
 
 class Program
 {
     static async Task Main(string[] args)
     {
         EnvLoader.LoadEnv();
-
-        Console.WriteLine("Enter User Name");
-        string? gameName = Console.ReadLine();
-
-        Console.WriteLine("Enter Tag");
-        string? userTag = Console.ReadLine();
-
         string? apiKey = Environment.GetEnvironmentVariable("RIOT_API_KEY");
 
-        if (string.IsNullOrWhiteSpace(apiKey) || string.IsNullOrWhiteSpace(gameName) || string.IsNullOrWhiteSpace(userTag))
+        var client = new RiotClient(apiKey);
+        var accountService = new AccountService(client);
+        var tftService = new TftService(client);
+
+        Console.WriteLine("Enter Summoner Name");
+        string gameName = Console.ReadLine();
+
+        Console.WriteLine("Enter tag:");
+        string tag = Console.ReadLine();
+
+        string puuid = await accountService.GetPuuidAsync(gameName, tag);
+
+        List<string> matchIds = await tftService.GetMatchIdsAsync(puuid);
+
+        foreach (var matchId in matchIds)
         {
-            Console.WriteLine("❌ Missing input.");
-            return;
-        }
+            var match = await tftService.GetMatchDetailsAsync(matchId);
 
-        string region = "https://europe.api.riotgames.com";
+            var player = match.info.participants.FirstOrDefault(p => p.puuid == puuid);
 
-        string requestUrl = $"{region}/riot/account/v1/accounts/by-riot-id/{gameName}/{userTag}";
-
-        using HttpClient client = new HttpClient();
-        client.DefaultRequestHeaders.Add("X-Riot-Token", apiKey);
-
-        try
-        {
-
-            HttpResponseMessage response = await client.GetAsync(requestUrl);
-            response.EnsureSuccessStatusCode();
-
-            string json = await response.Content.ReadAsStringAsync();
-            Console.WriteLine("Raw JSON:");
-            Console.WriteLine(json);
-
-            RiotAccount? account = JsonSerializer.Deserialize<RiotAccount>(json);
-
-            if (account != null)
+            if (player != null)
             {
-                Console.WriteLine($"PUUID for {account.gameName}#{account.tagLine}: {account.puuid}");
+                Console.WriteLine($"Match ID: {matchId}, Your Placement: {player.placement}");
             }
 
-        }
-        catch (HttpRequestException e)
-        {
-            Console.WriteLine($"Request Error: {e.Message}");
+            else
+            {
+                Console.WriteLine($"Match ID: {matchId}, Your player was not found.");
+            }
         }
     }
 }

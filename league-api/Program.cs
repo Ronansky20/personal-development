@@ -1,13 +1,12 @@
-﻿using DotNetEnv;
+﻿using League_API_Console_App;
 
 class Program
 {
     static async Task Main(string[] args)
     {
-        Env.Load();
+        EnvLoader.LoadEnv();
 
         string? apiKey = Environment.GetEnvironmentVariable("RIOT_API_KEY");
-        Console.WriteLine(apiKey);
 
         if (string.IsNullOrWhiteSpace(apiKey))
         {

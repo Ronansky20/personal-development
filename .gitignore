@@ -1,2 +1,65 @@
 .env
 .fake
+
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+## Ignore VS Code-specific files
+.vscode/
+
+## Ignore Visual Studio working folder
+.vs/
+
+## Ignore NuGet packages
+*.nupkg
+# Uncomment if using the `packages` folder
+# packages/
+# *.snupkg
+
+## Ignore build outputs
+*.dll
+*.exe
+*.app
+*.pdb
+*.cache
+*.mdb
+
+## Ignore publish outputs
+publish/
+out/
+
+## Ignore test results
+TestResults/
+*.TestResult.xml
+*.trx
+*.coverage
+*.coveragexml
+
+## Ignore temporary files
+*.tmp
+*.bak
+*.swp
+*.orig
+*.~*
+
+## Ignore dotnet CLI artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Ignore local settings
+appsettings.Development.json
+
+## Ignore ReSharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Ignore Mac/Linux files
+.DS_Store
+*.sw?
+
+## Ignore Windows thumbnail cache
+Thumbs.db
